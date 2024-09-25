@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .navibtn {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .navibtn .dash {
+      width: 100%;
+      height: 5px;
+      background: black;
+      border-radius: 500px;
+      transition: all 0.3s;
+    }
+    .navibtn:hover .dash:nth-child(1) {
+      transform: translate(0, 40px) rotate(45deg);
+    }
+    .navibtn:hover .dash:nth-child(2) {
+      transform: scale(0);
+    }
+    .navibtn:hover .dash:nth-child(3) {
+      transform: translate(0, -30px) rotate(-45deg);
+    }
+  </style>
+  <body>
+    <div class="navi">
+      <div class="navibtn">
+        <div class="dash"></div>
+        <div class="dash"></div>
+        <div class="dash"></div>
+      </div>
+    </div>
+  </body>
+</html>
